@@ -5,7 +5,7 @@ Screenshot of the UI/UX Design:
 
 <img src="https://i.imgur.com/4XH0SdI.png" width="683px">
 
-![alt text](https://i.imgur.com/vSdPvlV.png "Home - Tablet")
+<img src="https://i.imgur.com/vSdPvlV.png" width="683px">
 
 ![alt text](https://i.imgur.com/qh9SsIE.png "Home - Phone")
 
