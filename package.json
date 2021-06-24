@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Simple Weather App",
+  "main": "weather.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "clear && webpack",
+    "heroku-postbuild": "webpack -p"
+  },
+  "author": "gnwncpta",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,609 @@
+:root {
+    --sky-color: #4CACF2;
+}
+
+.width-80 {
+    width: 80%;
+    margin: auto;
+}
+
+.long-page {
+    height: 1150px;
+}
+
+.info-user {
+    font-weight: 300;
+    color: grey;
+}
+
+.empty-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+header {
+    background-color: var(--sky-color);
+    color: white;
+}
+
+header .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .head h1 { font-size: 25px; padding: 22px 0; }
+header .head p { font-size: 15px; font-weight: 200; }
+
+section.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+section.search input {
+    padding-left: 30px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    width: 100%;
+    margin-right: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 200;
+    border: none;
+    background-color: #F4F4F4;
+}
+
+section.search input::placeholder {
+    font-weight: 100;
+    font-size: 17px;
+}
+
+section.search input:focus {
+    outline: none;
+}
+
+section.search button {
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 13px 33px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: var(--sky-color);
+}
+
+section.weather-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    color: white;
+    background-image: linear-gradient(125deg, #0080ED, #00B6ED);
+}
+
+section.weather-result .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.weather-result .top .city p > img {
+    width: 19px;
+    height: 24px;
+    margin-right: 7px;
+}
+
+section.weather-result .top .city p:first-child {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+section.weather-result .top .city p:last-child {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+section.weather-result .top .celcius {
+    text-align: center;
+}
+
+section.weather-result .top .celcius p:first-child {
+    font-size: 75px;
+    font-weight: 200;
+}
+
+section.weather-result .bottom {
+    margin-top: 199px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.weather-result .bottom .temp-info,
+section.weather-result .bottom .wind .winds,
+section.weather-result .bottom .phv .phvs {
+    display: flex;
+}
+
+section.weather-result .bottom .wind img {
+    display: none;
+}
+
+section.weather-result .bottom .wind .wind-name, 
+section.weather-result .bottom .phv .phv-name {
+    display: none;
+}
+
+section.weather-result .bottom .temp-info .temp { margin-right: 30px; }
+section.weather-result .bottom .temp-info .temp p:first-child { font-size: 15px; font-weight: 500; }
+section.weather-result .bottom .temp-info .temp p:last-child { font-size: 25px; font-weight: 200; margin-top: 5px; }
+
+section.weather-result .bottom .temp-info .temp-min { margin-right: 30px; }
+section.weather-result .bottom .temp-info .temp-min p:first-child { font-size: 15px; font-weight: 500; }
+section.weather-result .bottom .temp-info .temp-min p:last-child { font-size: 25px; font-weight: 200; margin-top: 5px; }
+
+section.weather-result .bottom .temp-info .temp-max p:first-child { font-size: 15px; font-weight: 500; }
+section.weather-result .bottom .temp-info .temp-max p:last-child { font-size: 25px; font-weight: 200; margin-top: 5px; }
+
+section.weather-result .bottom .wind .speed { margin-right: 30px; }
+section.weather-result .bottom .wind .speed p:first-child { font-size: 15px; font-weight: 500; }
+section.weather-result .bottom .wind .speed p:last-child { font-size: 25px; font-weight: 200; margin-top: 5px; }
+
+section.weather-result .bottom .wind .degree p:first-child { font-size: 15px; font-weight: 500; }
+section.weather-result .bottom .wind .degree p:last-child { font-size: 25px; font-weight: 200; margin-top: 5px; }
+
+section.weather-result .bottom .phv .pressure { margin-right: 30px; }
+section.weather-result .bottom .phv .pressure p:first-child { font-size: 15px; font-weight: 500; }
+section.weather-result .bottom .phv .pressure p:last-child { font-size: 25px; font-weight: 200; margin-top: 5px; }
+
+section.weather-result .bottom .phv .humidity { margin-right: 30px; }
+section.weather-result .bottom .phv .humidity p:first-child { font-size: 15px; font-weight: 500; }
+section.weather-result .bottom .phv .humidity p:last-child { font-size: 25px; font-weight: 200; margin-top: 5px; }
+
+section.weather-result .bottom .phv .visibility p:first-child { font-size: 15px; font-weight: 500; }
+section.weather-result .bottom .phv .visibility p:last-child { font-size: 25px; font-weight: 200; margin-top: 5px; }
+
+/* 
+    STYLE ON TABLET
+    768px (portrait)
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    header .head h1 { font-size: 20px; }
+
+    section.search input {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 25px;
+    }
+
+    section.search button {
+        padding: 9px 22px;
+    }
+
+    section.weather-result {
+        padding: 35px 30px;
+    }
+
+    section.weather-result .top .city p:first-child {
+        font-size: 25px;
+    }
+
+    section.weather-result .top .city p:last-child {
+        font-size: 13px;
+    }
+
+    section.weather-result .top .celcius p:first-child {
+        font-size: 60px;
+    }
+
+    section.weather-result .top .celcius p:last-child {
+        font-size: 13px;
+    }
+
+    /* MARGIN */
+    section.weather-result .bottom .temp-info .temp,
+    section.weather-result .bottom .temp-info .temp-min { 
+        margin-right: 20px; 
+    }
+
+    section.weather-result .bottom .wind .speed { margin-right: 20px; }
+
+    section.weather-result .bottom .phv .pressure,
+    section.weather-result .bottom .phv .humidity {
+        margin-right: 20px;
+    }
+
+    /* FISRT CHILD */
+    section.weather-result .bottom .temp-info .temp p:first-child,
+    section.weather-result .bottom .temp-info .temp-min p:first-child,
+    section.weather-result .bottom .temp-info .temp-max p:first-child {
+        font-size: 12px;
+    }
+
+    section.weather-result .bottom .wind .speed p:first-child,
+    section.weather-result .bottom .wind .degree p:first-child {
+        font-size: 12px;
+    }
+
+    section.weather-result .bottom .phv .pressure p:first-child,
+    section.weather-result .bottom .phv .humidity p:first-child,
+    section.weather-result .bottom .phv .visibility p:first-child {
+        font-size: 12px;
+    }
+
+    /* LAST CHILD */
+    section.weather-result .bottom .temp-info .temp p:last-child,
+    section.weather-result .bottom .temp-info .temp-min p:last-child,
+    section.weather-result .bottom .temp-info .temp-max p:last-child {
+        font-size: 18px;
+    }
+
+    section.weather-result .bottom .wind .speed p:last-child,
+    section.weather-result .bottom .wind .degree p:last-child {
+        font-size: 18px;
+    }
+
+    section.weather-result .bottom .phv .pressure p:last-child,
+    section.weather-result .bottom .phv .humidity p:last-child,
+    section.weather-result .bottom .phv .visibility p:last-child {
+        font-size: 18px;
+    }
+}
+
+/* 
+    STYLE ON MOBILE - L
+    425px (portrait)
+*/
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+    main {
+        padding-bottom: 450px;
+        /* border: 1px solid red; */
+    }
+
+    header .head h1 {
+        font-size: 19px;
+    }
+
+    section.search input {
+        padding-left: 22px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-right: 8px;
+        border-radius: 5px;
+        background-color: #ededed;
+    }
+
+    section.search button {
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 8px 17px;
+    }
+
+    section.weather-result {
+
+    }
+
+    section.weather-result .top .city p:first-child {
+        font-size: 20px;
+    }
+
+    section.weather-result .top .city p:last-child {
+        font-size: 12px;
+    }
+
+    section.weather-result .top .celcius {
+        margin-top: 156px;
+    }
+
+    section.weather-result .top .celcius p:first-child {
+        font-size: 60px;
+    }
+
+    section.weather-result .top .celcius p:last-child {
+        font-size: 15px;
+    }
+
+    section.weather-result .top img {
+        width: 60px;
+        height: 60px;
+    }
+
+    section.weather-result .bottom {
+        position: relative;
+        display: block;
+    }
+
+    section.weather-result .bottom .temp-info {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* FISRT CHILD */
+    section.weather-result .bottom .temp-info .temp p:first-child,
+    section.weather-result .bottom .temp-info .temp-min p:first-child,
+    section.weather-result .bottom .temp-info .temp-max p:first-child {
+        font-size: 12px;
+    }
+
+    /* LAST CHILD */
+    section.weather-result .bottom .temp-info .temp p:last-child,
+    section.weather-result .bottom .temp-info .temp-min p:last-child,
+    section.weather-result .bottom .temp-info .temp-max p:last-child {
+        font-size: 18px;
+    }
+
+    section.weather-result .bottom .wind .wind-name {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 100px;
+    }
+
+    section.weather-result .bottom .wind {
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        left: -30px;
+        padding: 24px 30px;
+        border-radius: 10px;
+        background-image: linear-gradient(125deg, #0080ED, #00B6ED);
+        /* background-image: url('../assets/wind.png'); */
+    }
+
+    section.weather-result .bottom .wind .wind-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.weather-result .bottom .wind img {
+        display: block;
+        position: relative;
+        width: 169px;
+        height: 112.94px;
+        bottom: 10px;
+        left: 40px;
+        opacity: .4;
+    }
+
+    section.weather-result .bottom .wind .speed p:first-child,
+    section.weather-result .bottom .wind .degree p:first-child {
+        font-size: 12px;
+    }
+
+    section.weather-result .bottom .wind .speed p:last-child,
+    section.weather-result .bottom .wind .degree p:last-child {
+        font-size: 18px;
+    }
+
+    section.weather-result .bottom .phv .phv-name {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 37px;
+    }
+     
+    section.weather-result .bottom .phv {
+        position: absolute;
+        width: 100%;
+        top: 345px;
+        left: -30px;
+        padding: 24px 30px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        background-image: linear-gradient(125deg, #0080ED, #00B6ED);
+    }
+
+    section.weather-result .bottom .phv .pressure p:first-child,
+    section.weather-result .bottom .phv .humidity p:first-child,
+    section.weather-result .bottom .phv .visibility p:first-child { 
+        font-size: 12px; 
+        font-weight: 500; 
+    }
+
+    section.weather-result .bottom .phv .pressure p:last-child,
+    section.weather-result .bottom .phv .humidity p:last-child,
+    section.weather-result .bottom .phv .visibility p:last-child { 
+        font-size: 18px; 
+        font-weight: 200; 
+    }
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 280px) and (max-width: 424px) {
+  
+    .width-80 {
+        width: 90%;
+    }
+
+    main {
+        padding-bottom: 450px;
+    }
+
+    header .head h1 {
+        font-size: 19px;
+    }
+
+    header .head p {
+        font-size: 14px;
+    }
+
+    section.search input {
+        padding-left: 22px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-right: 8px;
+        border-radius: 5px;
+        background-color: #ededed;
+    }
+
+    section.search button {
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 8px 17px;
+    }
+
+    section.weather-result {
+        padding: 20px 20px;
+    }
+
+    section.weather-result .top .city p:first-child {
+        font-size: 20px;
+        width: 70px;
+    }
+
+    section.weather-result .top .city p:last-child {
+        font-size: 12px;
+    }
+
+    section.weather-result .top .celcius {
+        margin-top: 156px;
+    }
+
+    section.weather-result .top .celcius p:first-child {
+        font-size: 60px;
+    }
+
+    section.weather-result .top .celcius p:last-child {
+        font-size: 15px;
+    }
+
+    section.weather-result .top img {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    section.weather-result .bottom {
+        position: relative;
+        display: block;
+    }
+
+    section.weather-result .bottom .temp-info {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* FISRT CHILD */
+    section.weather-result .bottom .temp-info .temp p:first-child,
+    section.weather-result .bottom .temp-info .temp-min p:first-child,
+    section.weather-result .bottom .temp-info .temp-max p:first-child {
+        font-size: 12px;
+    }
+
+    /* LAST CHILD */
+    section.weather-result .bottom .temp-info .temp p:last-child,
+    section.weather-result .bottom .temp-info .temp-min p:last-child,
+    section.weather-result .bottom .temp-info .temp-max p:last-child {
+        font-size: 18px;
+    }
+
+    section.weather-result .bottom .wind .wind-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.weather-result .bottom .wind img {
+        display: block;
+        position: relative;
+        width: 169px;
+        height: 112.94px;
+        bottom: 10px;
+        left: 40px;
+        opacity: .4;
+    }
+
+    section.weather-result .bottom .wind .wind-name {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 100px;
+    }
+
+    section.weather-result .bottom .wind {
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        left: -20px;
+        padding: 20px 20px;
+        border-radius: 10px;
+        background-image: linear-gradient(125deg, #0080ED, #00B6ED);
+    }
+
+    section.weather-result .bottom .wind .speed p:first-child,
+    section.weather-result .bottom .wind .degree p:first-child {
+        font-size: 12px;
+    }
+
+    section.weather-result .bottom .wind .speed p:last-child,
+    section.weather-result .bottom .wind .degree p:last-child {
+        font-size: 18px;
+    }
+
+    section.weather-result .bottom .phv .phv-name {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 37px;
+    }
+     
+    section.weather-result .bottom .phv {
+        position: absolute;
+        width: 100%;
+        top: 340px;
+        left: -20px;
+        padding: 20px 20px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        background-image: linear-gradient(125deg, #0080ED, #00B6ED);
+    }
+
+    section.weather-result .bottom .phv .pressure p:first-child,
+    section.weather-result .bottom .phv .humidity p:first-child,
+    section.weather-result .bottom .phv .visibility p:first-child { 
+        font-size: 12px; 
+        font-weight: 500; 
+    }
+
+    section.weather-result .bottom .phv .pressure p:last-child,
+    section.weather-result .bottom .phv .humidity p:last-child,
+    section.weather-result .bottom .phv .visibility p:last-child { 
+        font-size: 18px; 
+        font-weight: 200; 
+    }
+    
+}
