@@ -3,7 +3,11 @@ Knowing the weather information using Weather App
 
 Screenshot of the UI/UX Design:
 
-![alt text](https://i.imgur.com/Gr8FUO1.png "The Design") 
+![alt text](https://i.imgur.com/4XH0SdI.png "Home")
+
+![alt text](https://i.imgur.com/vSdPvlV.png "Home - Tablet")
+
+![alt text](https://i.imgur.com/qh9SsIE.png "Home - Phone")
 
 Tech Stack:
 
