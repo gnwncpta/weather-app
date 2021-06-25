@@ -25,7 +25,8 @@ searchBtn.addEventListener('click', () => {
                     weatherGroup.innerHTML = emptyState();
                 }
             })
-            .then(response => displayWeather(response));
+            .then(response => displayWeather(response))
+            .catch(err => console.log(err));
     }
 })
 
