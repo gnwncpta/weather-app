@@ -1,4 +1,5 @@
 import './style.css';
+import showDummy from './showDummy';
 import showLoading from './showLoading';
 import displayWeather from './displayWeather';
 import emptyState from './emptyState';
@@ -8,7 +9,8 @@ const searchBtn = document.querySelector('section.search button');
 const userInput = document.querySelector('section.search input');
 const weatherGroup = document.querySelector('section.weather-group');
 
-weatherGroup.innerHTML = emptyState();
+// weatherGroup.innerHTML = emptyState();
+showDummy();
 
 searchBtn.addEventListener('click', () => {
     if(userInput.value == ''){
