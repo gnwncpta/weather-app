@@ -5,7 +5,7 @@ function showLoading(){
     <section class="weather-result width-80">
         <div class="top">
             <div class="city">
-                <p>Loading ..</p>
+                <p><img src="../assets/location-vc.svg" class="location">Loading ..</p>
                 <p>Loading ..</p>
             </div>
 

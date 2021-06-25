@@ -28,12 +28,8 @@ searchBtn.addEventListener('click', () => {
             .then(response => displayWeather(response))
             .catch(err => console.log(err));
     }
-})
-
-userInput.addEventListener('keyup', (e) => {
-    if(e.key == 'Enter'){
-        searchBtn.click();
-    }
 });
+
+userInput.addEventListener('keyup', (e) => { if(e.key == 'Enter'){ searchBtn.click(); } });
 
 export { weatherGroup }

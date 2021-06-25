@@ -16,7 +16,7 @@ function displayWeather(data) {
     <section class="weather-result width-80">
         <div class="top">
             <div class="city">
-                <p><img src="../assets/location.png" class="location">${name}</p>
+                <p><img src="../assets/location-vc.svg" class="location">${name}</p>
                 <p>${displayDate()}</p>
             </div>
 
