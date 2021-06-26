@@ -1,7 +1,7 @@
 const path = require('path');
 
 const webpack = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/weather.js',
     output: {
         filename: 'weather.bundled.js',
