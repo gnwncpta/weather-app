@@ -9,8 +9,8 @@ const searchBtn = document.querySelector('section.search button');
 const userInput = document.querySelector('section.search input');
 const weatherGroup = document.querySelector('section.weather-group');
 
-// weatherGroup.innerHTML = emptyState();
-showDummy();
+weatherGroup.innerHTML = emptyState();
+// showDummy();
 
 searchBtn.addEventListener('click', () => {
     if(userInput.value == ''){

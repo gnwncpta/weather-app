@@ -113,10 +113,9 @@ section.weather-result .top {
 }
 
 section.weather-result .top .city p > img {
-    width: 19px;
-    height: 24px;
+    width: 28px;
+    height: 32px;
     margin-right: 7px;
-    border: 1px solid red;
 }
 
 section.weather-result .top .city p:first-child {
@@ -211,6 +210,12 @@ section.weather-result .bottom .phv .visibility p:last-child { font-size: 25px; 
 
     section.weather-result {
         padding: 35px 30px;
+    }
+
+    section.weather-result .top .city p > img {
+        width: 24px;
+        height: 28px;
+        margin-right: 7px;
     }
 
     section.weather-result .top .city p:first-child {
@@ -312,6 +317,12 @@ section.weather-result .bottom .phv .visibility p:last-child { font-size: 25px; 
 
     section.weather-result {
 
+    }
+
+    section.weather-result .top .city p > img {
+        width: 20px;
+        height: 24px;
+        margin-right: 7px;
     }
 
     section.weather-result .top .city p:first-child {
@@ -480,6 +491,12 @@ section.weather-result .bottom .phv .visibility p:last-child { font-size: 25px; 
 
     section.weather-result {
         padding: 20px 20px;
+    }
+
+    section.weather-result .top .city p > img {
+        width: 20px;
+        height: 24px;
+        margin-right: 7px;
     }
 
     section.weather-result .top .city p:first-child {
