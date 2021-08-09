@@ -8,9 +8,14 @@ const { appID } = require('./api-config.json');
 const searchBtn = document.querySelector('section.search button');
 const userInput = document.querySelector('section.search input');
 const weatherGroup = document.querySelector('section.weather-group');
+const home = document.querySelector('header .head .logo');
 
 // weatherGroup.innerHTML = emptyState();
 showDummy();
+
+home.addEventListener('click', () => {
+    window.location.reload();
+})
 
 searchBtn.addEventListener('click', () => {
     if(userInput.value == ''){

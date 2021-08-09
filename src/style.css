@@ -51,6 +51,7 @@ header .head {
 header .head .logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 header .head .logo img {
@@ -334,9 +335,21 @@ section.weather-result .bottom .phv .visibility p:last-child { font-size: 25px; 
     }
 
     section.weather-result {
-
+        height: 568px;
+        padding: 20px 20px;
     }
 
+    section.weather-result .top {
+        position: relative;
+        /* border: 1px solid red; */
+    }
+
+    section.weather-result .top .city {
+        height: fit-content;
+        /* border: 1px solid red; */
+    }
+
+    /* Location SVG */
     section.weather-result .top .city p > img {
         width: 20px;
         height: 24px;
@@ -349,10 +362,16 @@ section.weather-result .bottom .phv .visibility p:last-child { font-size: 25px; 
 
     section.weather-result .top .city p:last-child {
         font-size: 12px;
+        width: 125px;
+        /* border: 1px solid red; */
     }
 
     section.weather-result .top .celcius {
+        position: absolute;
+        top: 60px;
+        left: 80px;
         margin-top: 156px;
+        /* border: 1px solid red; */
     }
 
     section.weather-result .top .celcius p:first-child {
@@ -363,9 +382,10 @@ section.weather-result .bottom .phv .visibility p:last-child { font-size: 25px; 
         font-size: 15px;
     }
 
-    section.weather-result .top img {
+    section.weather-result .top img.icon {
         width: 60px;
         height: 60px;
+        /* border: 1px solid red; */
     }
 
     section.weather-result .bottom {
@@ -392,22 +412,21 @@ section.weather-result .bottom .phv .visibility p:last-child { font-size: 25px; 
         font-size: 18px;
     }
 
+    section.weather-result .bottom .wind {
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        left: -20px;
+        padding: 20px 20px;
+        border-radius: 10px;
+        background-image: linear-gradient(125deg, #0080ED, #00B6ED);
+    }
+
     section.weather-result .bottom .wind .wind-name {
         display: block;
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 100px;
-    }
-
-    section.weather-result .bottom .wind {
-        position: absolute;
-        width: 100%;
-        top: 100px;
-        left: -30px;
-        padding: 24px 30px;
-        border-radius: 10px;
-        background-image: linear-gradient(125deg, #0080ED, #00B6ED);
-        /* background-image: url('../assets/wind.png'); */
     }
 
     section.weather-result .bottom .wind .wind-header {
@@ -446,8 +465,8 @@ section.weather-result .bottom .phv .visibility p:last-child { font-size: 25px; 
         position: absolute;
         width: 100%;
         top: 345px;
-        left: -30px;
-        padding: 24px 30px;
+        left: -20px;
+        padding: 20px 20px;
         border-radius: 10px;
         margin-bottom: 100px;
         background-image: linear-gradient(125deg, #0080ED, #00B6ED);
@@ -517,7 +536,18 @@ section.weather-result .bottom .phv .visibility p:last-child { font-size: 25px; 
     }
 
     section.weather-result {
+        height: 568px;
         padding: 20px 20px;
+    }
+
+    section.weather-result .top {
+        position: relative;
+        border: 1px solid red;
+    }
+
+    section.weather-result .top .city {
+        height: fit-content;
+        /* border: 1px solid red; */
     }
 
     section.weather-result .top .city p > img {
@@ -533,10 +563,16 @@ section.weather-result .bottom .phv .visibility p:last-child { font-size: 25px; 
 
     section.weather-result .top .city p:last-child {
         font-size: 12px;
+        width: 125px;
+        /* border: 1px solid red; */
     }
 
     section.weather-result .top .celcius {
+        position: absolute;
+        top: 60px;
+        left: 80px;
         margin-top: 156px;
+        /* border: 1px solid red; */
     }
 
     section.weather-result .top .celcius p:first-child {
@@ -547,10 +583,10 @@ section.weather-result .bottom .phv .visibility p:last-child { font-size: 25px; 
         font-size: 15px;
     }
 
-    section.weather-result .top img {
+    section.weather-result .top img.icon {
         width: 60px;
         height: 60px;
-        margin-right: 10px;
+        /* border: 1px solid red; */
     }
 
     section.weather-result .bottom {

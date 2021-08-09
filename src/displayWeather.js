@@ -25,7 +25,7 @@ function displayWeather(data) {
                 <p>${main}</p>
             </div>
             
-            <img src="${iconURL(icon)}" alt="${description}">
+            <img src="${iconURL(icon)}" alt="${description}" class="icon">
         </div>
 
         <div class="bottom">

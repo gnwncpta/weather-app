@@ -14,7 +14,7 @@ function showLoading(){
                 <p>loading ...</p>
             </div>
             
-            <img src="" alt="">
+            <img src="" alt="" class="icon">
         </div>
 
         <div class="bottom">

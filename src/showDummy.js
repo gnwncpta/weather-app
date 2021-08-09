@@ -14,7 +14,7 @@ function showDummy() {
                 <p>Haze</p>
             </div>
             
-            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Clouds">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Clouds" class="icon">
         </div>
 
         <div class="bottom">
